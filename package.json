@@ -1,0 +1,33 @@
+{
+  "name": "my-crawler2",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "This is an example of a Crawlee project.",
+  "dependencies": {
+    "crawlee": "^3.0.0",
+    "playwright": "*",
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "@apify/tsconfig": "^0.1.0",
+    "@types/ramda": "^0.28.22",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:prod": "node dist/main.js",
+    "start:dev": "ts-node-esm -T src/main.ts",
+    "start:HN_0": "ts-node-esm -T src/HN_0.ts",
+    "start:dev2": "ts-node-esm -T src/main2.ts",
+    "start:dev3": "ts-node-esm -T src/main3.ts",
+    "start:dev4": "ts-node-esm -T src/main4.ts",
+    "start:dev5": "ts-node-esm -T src/main5.ts",
+    "start:dev6": "ts-node-esm -T src/example_final_form/main6.ts",
+    "start:hn_ask": "ts-node-esm -T src/ASK_HN_min_project/HN_ask.ts",
+    "build": "tsc",
+    "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+  },
+  "author": "It's not you it's me",
+  "license": "ISC"
+}
